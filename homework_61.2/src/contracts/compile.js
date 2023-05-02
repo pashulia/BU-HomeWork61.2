@@ -29,8 +29,8 @@ function myCompiler(solc, fileName, contractName, contractCode) {
     // console.log(ABI);
     // console.log(bytecode);
 
-    fs.writeFileSync(__dirname + '/' + contractName + '.abi', JSON.stringify(ABI));
-    fs.writeFileSync(__dirname + '/' + contractName + '.bin', bytecode);
+    fs.writeFileSync(__dirname + '/' + contractName + '.abi.js', JSON.stringify(ABI));
+    fs.writeFileSync(__dirname + '/' + contractName + '.bin.js', bytecode);
 
     // `output` here contains the JSON output as specified in the documentation
     // for (var contractName in output.contracts['test.sol']) {

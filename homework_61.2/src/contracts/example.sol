@@ -16,10 +16,8 @@ contract Example {
         str = _str;
     }
 
-    function setData(uint256[] calldata _data) public {
-        for (uint256 i = 0; i < _data.length; i++){
-            data.push(_data[i]);
-        }
+    function setData(uint256 _data) public {
+            data.push(_data);
     }
 
     function getNumber() public view returns(uint256) {
